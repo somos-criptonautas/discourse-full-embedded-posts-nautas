@@ -1,8 +1,2 @@
-// Expansion landed — drop the now-pointless "Show more" button.
-// If the request failed there is no .expanded-embed, so the button stays as a fallback.
-.post__contents:has(.expanded-embed) {
-  .post__expand-button,
-  .expand-post {
-    display: none;
-  }
-}
+@use "lib/viewport";
+@import "ghost";
