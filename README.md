@@ -1,5 +1,7 @@
 # Full embedded posts
 
+**ENGLISH** | [ESPAÑOL](README.es.md)
+
 Discourse theme component for topics created by the [Embedding](https://meta.discourse.org/t/embedding-discourse-comments-via-javascript/31963)
 feature from a Ghost blog:
 
@@ -40,4 +42,6 @@ a plugin, not a theme.
 
 ## License
 
-MIT
+GPL-3.0. See [LICENSE](LICENSE).
+
+Text of this README under [CC BY-NC-SA 4.0](CC-BY-NC-SA-4.0.txt).
