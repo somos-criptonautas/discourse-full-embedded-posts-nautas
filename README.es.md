@@ -24,6 +24,6 @@ la consola de rails; mientras tanto, este componente es lo que hace que se muest
 
 ## Licencia
 
-GPL-3.0. Consulta [LICENSE](LICENSE).
+MIT. Consulta [LICENSE](LICENSE).
 
 Texto de este README bajo [CC BY-NC-SA 4.0](CC-BY-NC-SA-4.0.txt).

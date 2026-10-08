@@ -23,6 +23,6 @@ them render in full meanwhile.
 
 ## License
 
-GPL-3.0. See [LICENSE](LICENSE).
+MIT. See [LICENSE](LICENSE).
 
 Text of this README under [CC BY-NC-SA 4.0](CC-BY-NC-SA-4.0.txt).
