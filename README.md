@@ -2,6 +2,8 @@
 
 **ENGLISH** | [ESPAÑOL](README.es.md)
 
+Maintained by Criptonautas. Not affiliated with or endorsed by Discourse (Civilized Discourse Construction Kit, Inc.).
+
 Discourse theme component. Topics created by the [Embedding](https://meta.discourse.org/t/embedding-discourse-comments-via-javascript/31963)
 feature render the whole article on load, instead of an excerpt plus a "Show more" button.
 

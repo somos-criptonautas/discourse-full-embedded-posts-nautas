@@ -2,6 +2,8 @@
 
 [ENGLISH](README.md) | **ESPAÑOL**
 
+Mantenido por Criptonautas. Sin afiliación ni respaldo de Discourse (Civilized Discourse Construction Kit, Inc.).
+
 Componente de tema de Discourse. Los temas creados por la función de
 [Embedding](https://meta.discourse.org/t/embedding-discourse-comments-via-javascript/31963)
 muestran el artículo completo al cargar, en lugar de un extracto más un botón "Mostrar más".
