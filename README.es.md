@@ -8,6 +8,8 @@ Componente de tema de Discourse. Los temas creados por la función de
 [Embedding](https://meta.discourse.org/t/embedding-discourse-comments-via-javascript/31963)
 muestran el artículo completo al cargar, en lugar de un extracto más un botón "Mostrar más".
 
+![Artículo del blog incrustado, completo](docs/screenshots/full-article.png)
+
 ## Instalación
 
 Admin → Personalizar → Temas → Componentes → Instalar → Desde un repositorio git, con la URL de este repo.

@@ -7,6 +7,8 @@ Maintained by Criptonautas. Not affiliated with or endorsed by Discourse (Civili
 Discourse theme component. Topics created by the [Embedding](https://meta.discourse.org/t/embedding-discourse-comments-via-javascript/31963)
 feature render the whole article on load, instead of an excerpt plus a "Show more" button.
 
+![Embedded blog post rendered in full](docs/screenshots/full-article.png)
+
 ## Install
 
 Admin → Customize → Themes → Components → Install → From a git repository, with this repo's URL.
