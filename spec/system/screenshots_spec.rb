@@ -23,7 +23,8 @@ RSpec.describe "Screenshots" do
         :post,
         topic: topic,
         user: author,
-        raw: "We moved every service we use off third-party platforms. Here is why, and what it cost…",
+        raw:
+          "We moved every service we use off third-party platforms. Here is why, and what it cost…",
       )
     Fabricate(
       :topic_embed,
