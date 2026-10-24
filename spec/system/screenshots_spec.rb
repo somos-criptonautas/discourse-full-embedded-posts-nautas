@@ -54,4 +54,46 @@ RSpec.describe "Screenshots" do
       save("full-article")
     end
   end
+
+  it "folds a long article above the conversation" do
+    SiteSetting.tagging_enabled = true
+    component.update_setting(:collapse_tags, "blog")
+    component.update_setting(:collapsed_height, 320)
+    component.save!
+
+    reader = Fabricate(:user, username: "reader")
+    topic =
+      Fabricate(
+        :topic,
+        title: "A field guide to self-custody",
+        user: author,
+        tags: [Fabricate(:tag, name: "blog")],
+      )
+    sections = {
+      "Why custody matters" =>
+        "Coins held by an exchange are a promise from that exchange. Coins held by your keys are yours.",
+      "Choosing a wallet" =>
+        "Pick one that is open source, has been around for years and lets you export your seed.",
+      "Backups that survive" =>
+        "Write the seed on steel, keep two copies in two places, and test a restore before you need it.",
+      "Planning for inheritance" =>
+        "Someone you trust should know where the backups are and how to use them, without holding them.",
+    }
+    raw =
+      sections.map { |heading, text| "## #{heading}\n\n#{([text] * 3).join("\n\n")}" }.join("\n\n")
+    Fabricate(:post, topic: topic, user: author, raw: raw)
+    Fabricate(
+      :post,
+      topic: topic,
+      user: reader,
+      raw: "The backups section is the one I wish I had read a year ago.",
+    )
+
+    resize_window(width: 1100, height: 900) do
+      visit "/t/#{topic.slug}/#{topic.id}"
+      expect(page).to have_css(".collapsible-article.--collapsed")
+      expect(page).to have_css("[data-post-number='2'] .cooked", text: "backups section")
+      save("folded-article")
+    end
+  end
 end
