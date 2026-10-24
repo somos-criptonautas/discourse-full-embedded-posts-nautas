@@ -1,0 +1,8 @@
+es:
+  theme_metadata:
+    settings:
+      collapse_tags: "Pliega el primer post de los temas con alguna de estas etiquetas a una vista previa, con un botón para desplegarlo. Vacío: nunca se pliega."
+      collapsed_height: "Altura de la vista previa plegada, en píxeles."
+  collapsible_article:
+    show_more: "Ver más"
+    show_less: "Ver menos"

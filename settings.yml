@@ -1,0 +1,8 @@
+collapse_tags:
+  type: list
+  list_type: tag
+  default: ""
+collapsed_height:
+  type: integer
+  default: 900
+  min: 200

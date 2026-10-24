@@ -6,3 +6,14 @@
     display: none;
   }
 }
+
+// Folded preview of a long article. The fade marks the cut as intentional.
+.collapsible-article.--collapsed {
+  max-height: #{$collapsed_height}px;
+  overflow: hidden;
+  mask-image: linear-gradient(to bottom, #000 calc(100% - 6em), transparent);
+}
+
+.collapsible-article__toggle {
+  margin-block: var(--space-2);
+}
