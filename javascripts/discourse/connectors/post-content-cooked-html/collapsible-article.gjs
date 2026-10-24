@@ -2,7 +2,6 @@ import Component from "@glimmer/component";
 import { tracked } from "@glimmer/tracking";
 import { on } from "@ember/modifier";
 import { action } from "@ember/object";
-import { guidFor } from "@ember/object/internals";
 import { modifier } from "ember-modifier";
 import DButton from "discourse/components/d-button";
 import concatClass from "discourse/helpers/concat-class";
@@ -29,7 +28,9 @@ export default class CollapsibleArticle extends Component {
   @tracked expanded = false;
   @tracked tall = false;
 
-  contentId = `collapsible-article-${guidFor(this)}`;
+  get contentId() {
+    return `collapsible-article-${this.args.outletArgs.post.id}`;
+  }
 
   // Measures the unclipped content, so images loading or the embed expanding
   // afterwards still decide whether there is anything to fold.
