@@ -20,3 +20,9 @@ CI runs both. Screenshots in `docs/screenshots/` come from
 - Truncation happens at import. Settings changed later (`embed truncate`) only
   affect new imports; already imported topics stay truncated until reimported.
 - On failure the button stays. Don't hide it or show an error.
+- The fold wraps the `post-content-cooked-html` outlet. Core allows one wrapper
+  connector per outlet and flags any second one, so `shouldRender` claims it only
+  for tagged first posts. Keep that guard narrow.
+- Theme code can only import modules core itself ships. `@ember/object/internals`
+  passes lint and the type check but is missing at runtime, and the whole component
+  then fails to load. Only the CI system tests catch this.

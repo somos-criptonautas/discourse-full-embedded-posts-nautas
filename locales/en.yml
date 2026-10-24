@@ -1,0 +1,8 @@
+en:
+  theme_metadata:
+    settings:
+      collapse_tags: "Fold the first post of topics with any of these tags to a preview, with a button to unfold it. Leave empty to never fold."
+      collapsed_height: "Height of the folded preview, in pixels."
+  collapsible_article:
+    show_more: "Show more"
+    show_less: "Show less"

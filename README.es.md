@@ -14,6 +14,14 @@ muestran el artículo completo al cargar, en lugar de un extracto más un botón
 
 Admin → Personalizar → Temas → Componentes → Instalar → Desde un repositorio git, con la URL de este repo.
 
+## Plegar artículos largos
+
+Opcional. Indica etiquetas en `collapse tags` y el primer post de los temas que lleven
+alguna se pliega a una vista previa de `collapsed height` con un botón "Ver más". Los
+artículos cortos quedan igual, las respuestas nunca se pliegan y no cambia nada dentro del
+embed de comentarios del blog. El plegado es solo visual: el texto completo sigue en la
+página, así que buscadores y lectores de pantalla lo leen entero.
+
 ## Notas
 
 El truncado ocurre en la importación: el extracto se convierte en el post y el artículo completo

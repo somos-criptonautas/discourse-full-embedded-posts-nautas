@@ -13,6 +13,14 @@ feature render the whole article on load, instead of an excerpt plus a "Show mor
 
 Admin → Customize → Themes → Components → Install → From a git repository, with this repo's URL.
 
+## Folding long articles
+
+Optional. List tags in `collapse tags` and the first post of topics carrying any of them
+folds to a `collapsed height` preview with a "Show more" button. Short articles stay as
+they are, replies are never folded, and nothing changes inside the blog's own comments
+embed. The fold is visual only: the whole text is still on the page, so search engines and
+screen readers read all of it.
+
 ## Notes
 
 Truncation happens at import: the excerpt becomes the post, the full article is kept in
