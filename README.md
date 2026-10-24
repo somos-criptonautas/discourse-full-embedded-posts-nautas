@@ -6,6 +6,7 @@ Maintained by Criptonautas. Not affiliated with or endorsed by Discourse (Civili
 
 Discourse theme component. Topics created by the [Embedding](https://meta.discourse.org/t/embedding-discourse-comments-via-javascript/31963)
 feature render the whole article on load, instead of an excerpt plus a "Show more" button.
+Long articles can be folded to a preview, so the conversation stays close.
 
 ![Embedded blog post rendered in full](docs/screenshots/full-article.png)
 
@@ -15,11 +16,13 @@ Admin → Customize → Themes → Components → Install → From a git reposit
 
 ## Folding long articles
 
-Optional. List tags in `collapse tags` and the first post of topics carrying any of them
-folds to a `collapsed height` preview with a "Show more" button. Short articles stay as
-they are, replies are never folded, and nothing changes inside the blog's own comments
-embed. The fold is visual only: the whole text is still on the page, so search engines and
-screen readers read all of it.
+Optional. List tags in `collapse tags` (empty by default, which turns folding off) and the
+first post of topics carrying any of them folds to a `collapsed height` preview (900 px by
+default) with a "Show more" button. Short articles stay as they are, replies are never
+folded, and nothing changes inside the blog's own comments embed. The fold is visual only:
+the whole text is still on the page, so search engines and screen readers read all of it.
+
+![Long article folded above the first reply](docs/screenshots/folded-article.png)
 
 ## Notes
 

@@ -7,6 +7,7 @@ Mantenido por Criptonautas. Sin afiliación ni respaldo de Discourse (Civilized 
 Componente de tema de Discourse. Los temas creados por la función de
 [Embedding](https://meta.discourse.org/t/embedding-discourse-comments-via-javascript/31963)
 muestran el artículo completo al cargar, en lugar de un extracto más un botón "Mostrar más".
+Los artículos largos se pueden plegar a una vista previa, para que la conversación quede cerca.
 
 ![Artículo del blog incrustado, completo](docs/screenshots/full-article.png)
 
@@ -16,11 +17,14 @@ Admin → Personalizar → Temas → Componentes → Instalar → Desde un repos
 
 ## Plegar artículos largos
 
-Opcional. Indica etiquetas en `collapse tags` y el primer post de los temas que lleven
-alguna se pliega a una vista previa de `collapsed height` con un botón "Ver más". Los
-artículos cortos quedan igual, las respuestas nunca se pliegan y no cambia nada dentro del
-embed de comentarios del blog. El plegado es solo visual: el texto completo sigue en la
-página, así que buscadores y lectores de pantalla lo leen entero.
+Opcional. Indica etiquetas en `collapse tags` (vacío por defecto, lo que desactiva el
+plegado) y el primer post de los temas que lleven alguna se pliega a una vista previa de
+`collapsed height` (900 px por defecto) con un botón "Ver más". Los artículos cortos quedan
+igual, las respuestas nunca se pliegan y no cambia nada dentro del embed de comentarios del
+blog. El plegado es solo visual: el texto completo sigue en la página, así que buscadores y
+lectores de pantalla lo leen entero.
+
+![Artículo largo plegado sobre la primera respuesta](docs/screenshots/folded-article.png)
 
 ## Notas
 
